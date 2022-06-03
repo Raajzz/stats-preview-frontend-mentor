@@ -1,6 +1,5 @@
 # Stats Preview Card Component built using React and Vanilla CSS
 
-The deployed site is available [here](https://order-summary-raaj-s.netlify.app/)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
