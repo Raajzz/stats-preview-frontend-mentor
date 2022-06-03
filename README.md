@@ -1,4 +1,4 @@
-# Order Summary Component built using React and Vanilla CSS
+# Stats Preview Card Component built using React and Vanilla CSS
 
 The deployed site is available [here](https://order-summary-raaj-s.netlify.app/)
 # Getting Started with Create React App
