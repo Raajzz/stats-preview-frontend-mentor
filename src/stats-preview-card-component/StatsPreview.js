@@ -20,7 +20,7 @@ const StatsPreview = () => {
 			<div className="card-container">
 				<main className="card">
 					<div className="text-section">
-
+				  
 						<div>
 							<h1>
 								Get <span className="insights">insights</span> that help your
