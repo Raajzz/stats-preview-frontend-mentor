@@ -35,17 +35,17 @@ const StatsPreview = () => {
 
 						<div className="stats-section">
 
-							<div>
+							<div className="single-stat">
 								<div className="title">10k+</div>
 								<div className="sub-title">COMPANIES</div>
 							</div>
               
-							<div>
+							<div className="single-stat">
 								<div className="title">314</div>
 								<div className="sub-title">TEMPLATES</div>
 							</div>
               
-							<div>
+							<div className="single-stat">
 								<div className="title">12M+</div>
 								<div className="sub-title">QUERIES</div>
 							</div>

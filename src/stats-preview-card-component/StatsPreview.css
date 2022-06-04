@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
 *{
   margin: 0;
@@ -6,40 +6,39 @@
   box-sizing: border-box;
 }
 
-.card-container{
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
-/* I'm planning to create the two designs (one for desktop and one for mobile seperately and then I'll make them responsive by bringin in the media tags. */
-
 .card{
   background-color: hsl(244, 38%, 16%);
   border-radius: 10px;
 }
 
 /* common styles */
+.insights{
+  color: hsl(277, 64%, 61%);
+}
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1174px) {
 
   /* mobile design */
   
+  .card-container{
+    padding: 20px 10px;
+  }
+
   .card{
     width: 90%;
-    height: 90%;
+    height: 900px;
+    margin: 40px auto 30px auto;
     display: flex;
     flex-direction: column-reverse;
   }
 
   .text-section{
-    height: 100%;
+    height: 70%;
     width: 100%;
   }
 
   .image-section{
-    height: 35%;
+    height: 31%;
     position: relative;
   }
 
@@ -65,11 +64,61 @@
     border-top-right-radius: 10px;
   }
 
+  .text-section{
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .text-section h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+  .text-section p{
+    display: block;
+    width: fit-content;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 0 60px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 30px;
+  }
+
+  .stats-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats-section > .single-stat{
+    margin-bottom: 40px;
+  }
+
+  .stats-section .title{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .stats-section .sub-title{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: hsla(0, 0%, 100%, 0.6);
+  }
 }
 
-@media screen and (min-width: 640px){
+@media screen and (min-width: 1174px){
   /* desktop design */
-  
+  .card-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
   .card{
     width: 80%;
     height: 70%;
@@ -94,10 +143,6 @@
     font-size: 18px;
     line-height: 1.6;
     color: hsla(0, 0%, 100%, 0.75);
-  }
-  
-  .insights{
-    color: hsl(277, 64%, 61%);
   }
   
   .stats-section {
@@ -148,40 +193,3 @@
   }
   
 }
-
-/* 
-.card{
-  background-color: white;
-  height: 500px;
-}
-
-
-@media screen and (min-width: 640px){
-  .card{
-    width: 500px;
-  }
-}
-
-@media screen and (min-width: 768px){
-  .card{
-    width: 640px;
-  }
-}
-
-@media screen and (min-width: 1024px){
-  .card{
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1280px){
-  .card{
-    width: 1024px;
-  }
-}
-
-@media screen and (min-width: 1536px){
-  .card{
-    width: 1280px;
-  }
-} */
